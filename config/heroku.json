@@ -1,0 +1,111 @@
+{
+  "url": "http://referist.herokuapp.com",
+  "api": {
+    "aws": {
+      "key": "@@@@@",
+      "secret": "@@@@@"
+    },
+    "facebook": {
+      "appId": "257914567699646",
+      "appSecret": "82bef202f089517c9be0556ad3d45416"
+    },
+    "google": {
+      "clientId": "@@@@@",
+      "clientSecret": "@@@@@"
+    },
+    "rackspace": {
+      "username": "@@@@@",
+      "apiKey": "@@@@@"
+    },
+    "twitter": {
+      "accessToken": "2266287091-8xNub00g53aSO4CG1e2GHsoi0ulBCrqGXOCOqIT",
+      "accessTokenSecret": "V8SFACqQbCgJCZLYxGDTk4qr0hBB08DziHrIJved8bWie",
+      "consumerKey": "8VhR79KvCIGiPxRAzB7RA",
+      "consumerSecret": "KMosZJXTc8UpYk51cZDxm64I6h0gpVmCdsGvZpa6Jgw"
+    }
+  },
+  "cookie": {
+    "secret": "UlTiMaTeSeCrEtKeY"
+  },
+  "db": {
+    "mongo": {
+      "host": "@@@@@",
+      "port": 27017,
+      "username": null,
+      "password": null,
+      "db": "ultimate-seed"
+    },
+    "redis": {
+      "host": "@@@@@",
+      "port": 6379,
+      "password": null,
+      "namespace": "ultimate-seed"
+    }
+  },
+  "log": {
+    "_use": [
+      "console",
+      "sns"
+    ],
+    "transport": {
+      "console": {
+        "level": "debug"
+      },
+      "file": {
+        "level": "error"
+      },
+      "mongo": {
+        "level": "error"
+      },
+      "sns": {
+        "level": "error",
+        "subscriber": "@@@@@",
+        "topicArn": "@@@@@"
+      }
+    }
+  },
+  "mail": {
+    "_use": "ses",
+    "transport": {
+      "ses": {},
+      "smtp": {
+        "host": "@@@@@",
+        "port": 25,
+        "username": "@@@@@",
+        "password": "@@@@@",
+        "secure": false
+      }
+    }
+  },
+  "session": {
+    "_use": "redis",
+    "key": "sid",
+    "secret": "UlTiMaTeSeCrEtKeY",
+    "store": {
+      "mongo": {
+        "collection": "sessions"
+      },
+      "redis": {
+        "prefix": "ultimate-seed:sessions"
+      }
+    }
+  },
+  "socketio": {
+    "store": "redis"
+  },
+  "storage": {
+    "_use": "s3",
+    "backend": {
+      "cloudFiles": {
+        "container": {
+          "main": "@@@@@"
+        }
+      },
+      "s3": {
+        "bucket": {
+          "main": "@@@@@"
+        }
+      }
+    }
+  }
+}
