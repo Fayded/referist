@@ -10,8 +10,8 @@
       "appSecret": "82bef202f089517c9be0556ad3d45416"
     },
     "google": {
-      "clientId": "@@@@@",
-      "clientSecret": "@@@@@"
+      "clientId": "222267025560.apps.googleusercontent.com",
+      "clientSecret": "251CNTMtTeCjm6qMT9OiG4-q"
     },
     "rackspace": {
       "username": "@@@@@",
@@ -29,14 +29,14 @@
   },
   "db": {
     "mongo": {
-      "host": "@@@@@",
-      "port": 27017,
-      "username": null,
-      "password": null,
-      "db": "ultimate-seed"
+      "host": "ec2-54-197-241-78.compute-1.amazonaws.com",
+      "port": 5432,
+      "username": "dxrwlddcjpejfv",
+      "password": "S9j3ySfBr3nZXFiyPBrgwj3IAg",
+      "db": "df9f40gg857i8v"
     },
     "redis": {
-      "host": "@@@@@",
+      "host": "ec2-54-197-241-78.compute-1.amazonaws.com",
       "port": 6379,
       "password": null,
       "namespace": "ultimate-seed"
